@@ -6,6 +6,7 @@
 
 body{
     background-color: hsl(47, 88%, 63%);
+    font-size: 1rem;
     display: flex;
     width: auto;
     height: 100vh;
@@ -29,15 +30,18 @@ body{
     box-shadow: 8px 8px;
 }
 
-.ilustration{
+.ilustration > img {
     border-radius: 12px;
     margin-bottom: 1.5rem;
 }
 
-h2{
-    color: hsl(0, 0%, 7%);
+.text-card{
     text-align: left;
     letter-spacing: 0.2px;
+}
+
+h2{
+    color: hsl(0, 0%, 7%); 
 }
 
 h2:hover{
@@ -49,14 +53,11 @@ h3{
     color: hsl(0, 0%, 7%);
     font-size: medium;
     font-weight: 350;
-    text-align: left;
 }
 
 h4{
     color: hsl(0, 0%, 42%);
     font-weight: 400;
-    text-align: left;
-    letter-spacing: 0.2px;
 }
 
 button{
@@ -92,4 +93,40 @@ p{
     color: hsl(228, 45%, 44%);
     font-size: 11px;
     text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+    .ilustration img {
+        width: 18rem;
+        object-fit: none;
+    }
+    
+    .card{
+        width: 18rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    button{
+        font-size: 12px;
+    }
+    
+    h2{
+        font-size: 21px;
+    }
+
+    h3{
+        font-size: 13px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+    p{
+        font-size: 14px;
+    }
 }
